@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+<title>SYNON DEVELOPERS</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Keywords" content="SYNON,RPG,SEQUEL,AS400,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,source code,colors,demos,tips">
+<meta name="Description" content="Well organized and easy to understand synon bulding tutorials with lots of examples of how to use SYNON,RPG,SEQUEL and AS400.">
+<link rel="stylesheet" href="css/sd.css">
+
+
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-3855518-1', 'auto');
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+</script>
+
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<link rel="stylesheet" type="text/css" href="css/stdtheme.css" />
+</head>
+<body>
+
+<div class='w3-container top'>
+<a class='w3schools-logo' href='www.synondeveloper.com'>SynonDeveloper<span class='dotcom'>.com</span></a>
+<div class='w3-right toptext w3-wide'>WEBSITE FOR SYNON DEVELOPERS
+</div>
+</div>
+<div class='w3-navbar w3-card-2 w3-slim topnav' id='topnav'>
+<div style='overflow:auto;'>
+<div style='float:left;width:50%;overflow:hidden;height:44px'>
+<a href='javascript:void(0);' class='topnav-localicons w3-hide-large w3-left' onclick='open_menu()' title='Menu'>&#9776;</a>
+<a href='Home.html'>HOME</a>
+
+</div>
+<!--Search box  Starts-->
+<div style='float:left;width:50%;overflow:hidden;height:44px'>
+<script>
+  (function() {
+    var cx = '018047149702499298438:mbvzdj0gtds';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:searchbox-only></gcse:searchbox-only>
+</div>
+<!--Search box  Ends-->
+</div>
+</div>
+<!--all opened div are closed here -->
+
+<!--This is top-div -->
+<div class='w3-row w3-light-grey' id='belowtopnav'>
+<div class='w3-col w3-slim' id='leftmenu'>
+<div id='leftmenuinner'>
+<div class='w3-light-grey' id='leftmenuinnerinner'>
+
+<a href='javascript:void(0)' onclick='close_menu()' class='w3-closebtn w3-hide-large w3-large' style='padding:3px 12px;'>&times;</a>
+<h2 class="left"><span class="left_h2">Synon</span> Tutorial</h2>
+<a target="_top" href="Home.html">Synon Home</a>
+<a target="_top" href="Main.html">Synon Main Menu</a>
+<a target="_top" href="Filetypes.html">Synon File Types</a>
+<a target="_top" href="Fieldtypes.html">Synon Field Types</a>
+<a target="_top" href="Fieldconditions.html">Synon Field Conditions</a>
+<a target="_top" href="Accesspath.html">Synon Access Paths</a>
+<a target="_top" href="Context.html">Synon Context</a>
+<a target="_top" href="Parameters.html">Synon Parameters</a>
+<a target="_top" href="Editor.html">Synon Editor</a>
+<a target="_top" href="Screendesign.html">Synon Screen Design</a>
+<br>
+<h2 class="left"><span class="left_h2">Synon</span> Functions</h2>
+<a target="_top" href="Changeobject.html">Change object</a>
+<a target="_top" href="Createobject.html">Create object</a>
+<a target="_top" href="Definereportformat.html">Define report format</a>
+<a target="_top" href="Definescreenformat.html">Define screen format</a>
+<a target="_top" href="Deleteobject.html">Delete object</a>
+<a target="_top" href="Displayfile.html">Display file</a>
+<a target="_top" href="Displayrecord.html">Display record</a>
+<a target="_top" href="Displaytransaction.html">Display transactions</a>
+<a target="_top" href="Editfile.html">Edit file</a>
+<a target="_top" href="Editrecord.html">Edit record</a>
+<a target="_top" href="Edittransaction.html">Edit transaction</a>
+<a target="_top" href="Externalfunction.html">Execute external function</a>
+<a target="_top" href="Internalfunction.html">Execute internal function</a>
+<a target="_top" href="Userprogram.html">Execute user program</a>
+<a target="_top" href="Usersource.html">Execute user source</a>
+<a target="_top" href="Printfile.html">Print file</a>
+<a target="_top" href="Printobject.html">Print object</a>
+<a target="_top" href="Promptrecord.html">Prompt & validate record</a>
+<a target="_top" href="Retrieveobject.html">Retrieve object</a>
+<a target="_top" href="Selectrecord.html">Select record</a>
+<a target="_top" href="Serviceprogram.html">Service program</a>
+<a target="_top" href="Triggerfunction.html">Trigger function</a>
+<a target="_top" href="Webservices.html">Web service</a>
+<a target="_top" href="Wsproxyfunction.html">WS Proxy function</a>
+<br>
+<a target="_top" href="Functionoptions.html">Synon Function Options</a>
+<br>
+
+<a target="_top" href="Synoncasestudy.html">Synon Case Study</a> 
+<br>
+<a target="_top" href="Synonfaqs.html">Synon FAQs</a><br><br>
+</div>
+</div>&nbsp;
+</div>
+<!--all div closed here except the top div -->
+
+<div class='w3-rest'>
+<div class='w3-row w3-white'>
+<div class='w3-col l10 m12' id='main'>
+
+<!-- put your add here - banner --><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- SDAutomaticSize -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3339759631351262"
+     data-ad-slot="1183552039"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+<h1>Synon FAQs</h1>
+<!--put your stuff in here -->
+<p>
+<strong>1.       Type of Access Path.<br> </strong>
+
+Ans  total 6 types of Access path. PHY, RTV, RSQ, UPD,SPN,QRY.<br>
+
+<strong>2.       Why we will use Span Access path. </strong><br>
+
+Ans Span Access path will be used to create Edit and Display Transaction functions. Using this we can populate and we can update two files at a time. (For ex:Join logical file.)<br>
+
+<strong>3.       Difference between Internal Function and External Function.</strong> <br>
+
+Ans  Internal functions are not independent programs these are kind of subroutines. We cannot generate (compile) internal functions independently; if we want we can include this in external functions or any other functions. External Functions are stand alone functions which can be compiled independently.<br>
+
+<strong>4.       How many parameters we can pass in synon program.</strong><br>
+
+Ans: We can pass 9 parmeters at a time. If we want to pass more than then we can use arrays, or whole access paths.<br>
+
+<strong>5.       How many types of files we have in synon.</strong><br>
+
+Ans : Reference file, capture file and Structure file these are important files.<br>
+
+<strong>6.       Difference between these files.</strong><br>
+
+Ans : Whenever you create Reference file. 5 functions will be created automatically. 3 internal functions (those are Create object, change object, delete object) and 2 external functions will be created(Edit file and select file).<br>
+
+<strong>7.       Types of file to file relations.</strong><br>
+
+Ans : Refers to, Owned by, includes.<br>
+
+<strong>8.       Types of File to field relations.</strong><br>
+
+Ans : Known by, has, qualified by.<br>
+
+<strong>9.       How many function options we have it for Retrieve object.</strong><br>
+
+Ans : Only one i.e. Share Sub routine (Yes or No)<br>
+
+<strong>10.   What is the use of Share Sub routine.</strong><br>
+
+Ans : If we make it as Yes, then if we are calling this retrieve obj in one program and in many places, instead of creating different different subroutines it will create only one subroutine.<br>
+
+<strong>11.   How many user points we have it in retrieve object.</strong><br>
+
+Ans :four user points.<br>
+
+<strong>12.   How we can call external programs (outside cbl or cl pgms) in synon functions.</strong><br>
+
+Ans : Using Execute User programs.<br>
+
+<strong>13.   What are function options and what is the use.</strong><br>
+ 
+Ans :we have many function options. For ex: Create object, change object, delete object, confirm prompt, commitment control. In Edit file function you want to disable delete functionality you can achieve this making "Delete object" as "No" in function options.<br>
+
+<strong>14.   Different between LCL and WRK variables.</strong><br>
+
+Ans : Local variables never holds any junk values if you are not initializing also. But WRK variables always holds the values. WRK are kind of Global variables.<br>
+
+<strong>15.   How you will insert print object in printer file.</strong><br>
+
+Ans : Using Option "T" on the printer file function.<br>
+
+<strong>16.   In Printer file function what all are the Context you can see</strong>.<br>
+
+Ans : CUR, NXT, WRK, LCL etc. The important are CUR and NXT.<br>
+
+<strong>17.   If you have retrieve object their you have two output variables in parameter list and in you functionality you do not want second output variable. What will you do, you will create one more retrieve object or any other solution.</strong><br>
+
+Ans: Instead of creating new retrieve object you can use the same one, the one output variable which you do not want make it as NLL.<br>
+
+</p>
+<strong>Some more Interview Questions on Synon.</strong><br><br>
+<strong>Questions on File Types</strong><br>
+<br>
+1.	Name the different File object attributes<br>
+<br>
+File Name and File type: <br>
+ie. Name:Company Type:REF; Name:Order Type:CPT; Name:Audit Type: STR<br>
+<br>
+REF &ndash; Database Reference File  <br>
+CPT &ndash; Database Capture File<br>
+STR &ndash; Structure File (data structure)<br>
+<br>
+2.	What is a STR file used for?<br>
+<br>
+A STR file is used for implementing a data structure of fields that are not logically included in a physical data file.  An example would be audit information or job run type information (program name, user id, run time, etc.).  It can also be used for passing parameters between functions.<br>
+<br>
+3.	What is a REF file?<br>
+<br>
+A REF is a master file like customer or company.  It contains static information that rarely changes and is typically referred to rather than appended to with additional records.<br>
+ <br>
+4.	What are the pragmatic DDS differences between REF and CPT files?<br>
+<br>
+CPT files will have CRTOBJ, DLTOBJ, and CHGOBJ functions automatically generated by Synon, all associasted with UPD access paths.  REF files will also have SELRCD and EDTFIL functions automatically generated associated with RTV access paths.  As a result, REF files will have additional DDS generated to accommodate the RTV access paths.<br>
+ <br>
+5.	What is the definition of a CPT file?<br>
+<br>
+A CPT (Capture file) is a transaction file like Order or Order Detail.  It also contains static information but is dynamic in the sense that records are often appended to it and modified within it. <br>
+<br>
+6.	When you create a REF type file, what are the 5 functions that are automatically created by SYNON?<br>
+<br>
+CHGOBJ  &ndash; Change object<br>	
+CRTOBJ  &ndash; Create object<br>
+DLTOBJ  &ndash; Delete object<br>
+EDTFIL  &ndash; Edit File<br>
+SELRCD &ndash; Select Record<br>
+<br>
+7.	What is the difference between logical and physical files?<br>
+<br>
+A physical file is where the data resides.  A logical file provides a different view of the physical file allowing for different keys and sequencing.<br>
+<br>
+8.	What is an assimilated file?<br>
+<br>
+An existing physical file that has been retrieved into a SYNON data model.<br>
+<br>
+9.	Name 2 object types.<br>
+<br>
+FIL  File<br>	
+FLD  Field<br>
+<br>
+10.	Name 5 relation types and their relation type level<br>
+<br>
+DEFINED AS &ndash; FIL	Declares that the file exists (Automatically created by Synon for each file)<br>
+EXTENDED BY &ndash; ATR	Declares the file to have a one-to-one or one-to-none relationship with another file<br>
+HAS &ndash; ATR	Declares the field as a data field on the file<br>
+INCLUDES &ndash; ATR	Causes fields of the referenced file or included structures to be included as attributes in the referencing file<br>
+KNOWN BY &ndash; KEY	Declares the field to be present as a key field on the file<br>
+OWNED BY &ndash; KEY	Specifies that the keys of the owning file are to become major keys of the owned by file<br>
+QUALIFIED BY &ndash; KEY	Declares a field to be present on file as a key field; is used with continuous variables<br>
+REFERS TO &ndash; ATR	Causes the key fields of the referenced to be included as non-key fields on the referring file.<br>
+<br>
+11.	What are the types of SYNON Primary Key relations?  Write them down in the order they should be sequenced.<br>
+<br>
+Owned by	<br>
+Known by<br>
+Qualified by	<br>
+Has<br>
+Refers to	<br>
+Includes<br>
+<br>
+12.	What are the types of foreign key SYNON relations (or file to file relations)?<br>
+<br>
+Owned by<br>
+Refers to<br>
+<br>
+13.	What is the effect on a SYNON entity that has a File to File relationship with another entity?<br>
+<br>
+Referential integrity between the entities is built into the functions built over the entities.  Select Record functions are automatically built to provide F4 or ? lookups against the entities.<br>
+<br>
+14.	What are the benefits proved by File to File relations in a SYNON generated application?<br>
+<br>
+You do not have to perform the validations in your action diagram.  SYNON builds them in.<br>
+<br>
+15.	What is the data type that is most frequently used?<br>
+<br>
+This will probably vary by data model but it should be the REF type so that field attributes and domains are inherited.<br>
+<br>
+16.	What data types do we NOT create REF data types for?  Why?<br>
+<br>
+DTE and TIM data types because the data type itself defines it is set of allowable values or domain.<br>
+<br>
+17.	How can multiple Refers To relationships be uniquely identified on an entity?<br>
+<br>
+Use the FOR text or replace the field entries with correctly named fields.<br>
+<br>
+18.	How in SYNON is the term &lsquo;SHARING&rsquo; used?<br>
+<br>
+When you have relationships that have keys in common and you do not want to have additional occurrences of the key field, you may say that the 2 relationships should Share the key.  Sharing *ALL is defaulted by SYNON so different versions of the same key field are not added to the entity.<br>
+When you do not want multiple versions of the same field as in the example &lsquo;Employee refers to Employee for Supervisor and For Manager&rsquo;, and Employee is KNOWN by Employee User ID, we want 3 of the Employee User ID field.  You should specify *NONE for sharing to make this occur and use FOR text to differentiate each of the 3 occurrences.<br>
+<br>
+19.	In data modeling, what does SHARING *NONE mean?<br>
+<br>
+The keys of the file being referred to are not shared by keys on the file has the &lsquo;REFERS TO&rsquo; relation.<br>
+<br>
+20.	What is the impact of designating a file as a Capture or Reference file?<br>
+<br>
+If you do not designate a file as a Capture or Reference file correctly, you are not describing the entity as well as you could.  The only real impact is than an Edit File and Select Record function will get created automatically for a Reference File and in a Capture File, they will NOT get created automatically but you may do so manually.<br>
+<br>
+<br>
+<strong> Questions on Field Types</strong><br>
+<br>
+21.	Name 8 field types.<br>
+<br>
+<strong>Numeric</strong><br>
+NBR &ndash; Number<br>
+PCT &ndash; Percentage<br>
+PRC &ndash; Price<br>
+QTY &ndash; Quantity<br>
+VAL &ndash; Value<br>
+DTE &ndash; Date<br>
+TME &ndash; Time<br>
+SGT &ndash; Surrogate<br>
+<strong>Alphanumeric</strong><br>
+CDE &ndash; Code<br>
+DT# &ndash; *ISO Date<br>
+IGC &ndash; Ideographic<br>
+NAR &ndash; Narrative Text<br>
+TM# &ndash; Time<br>
+TS# &ndash; Time Share<br>
+TXT &ndash; Text<br>
+VNM &ndash; Valid System Name<br>
+<strong>Special Fields</strong><br>
+REF &ndash; Reference<br>
+STS &ndash; Status<br>
+<br>
+22.	Name 4 field usages.<br>
+<br>
+ATR &ndash; Attribute database file <br> 
+CDE &ndash; Code<br>
+CNT &ndash; Count function field<br>
+DRV &ndash; Derived function field<br>
+MAX &ndash; Maximum function field <br>
+MIN &ndash; Minimum function field<br>
+SUM &ndash; Sum Function field<br>
+USR &ndash; User function field<br>
+<br>
+23.	What is a Derived field?<br>
+<br>
+Any field that calculated from other fields rather than physically stored in the database.<br>
+ <br>
+<br>
+24.	How is a Derived field implemented in RPG?<br>
+<br>
+Using a CALC specification.<br>
+<br>
+25.	How many output parameters can a derived function field have?<br>
+<br>
+One the derived field itself.<br>
+<br>
+26.	What are ATR type fields?<br>
+<br>
+ATR type fields are data attribute, non&ndash;key fields associated with a file.  ie. Company Address in Company file.<br>
+	<br>
+27.	What are CDE type fields? <br>
+<br>
+CDE type fields are key fields associated with a file defined by a &lsquo;Known By&rsquo; relation.  Ie. Company Code in a Company file.<br>
+	<br>
+28.	What are USR type fields? <br>
+<br>
+Fields made by a programmer for a function that are not typically classified elsewhere and hold special values.<br>
+<br>
+29.	What are virtual fields and what are they used for?<br>
+<br>
+A field, which is physically present on one file but logically, used on another file. These fields are most commonly used when a relationship is going to be checked numerous times.<br>
+<br>
+30.	Where can virtual fields be specified?<br>
+	<br>
+	Virtual fields can only be specified on the &lsquo;Owned by&rsquo;, &lsquo;Refers To&rsquo; and &lsquo;Extended by&rsquo; relation types.  Ie.  Division is Owned by Company.  Company fields can be virtualized to Division but Division fields cannot be virtualized to Company.<br>
+<br>
+<strong> Questions on Access Paths </strong><br>
+31.	Name 4 types of access paths.<br>
+<br>
+PHY 	 Physical<br>
+QRY 	 Query<br>
+RSQ 	 Resequence<br>
+RTV 	 Retrieval<br>
+SPN 	 Spanned<br>
+UPD 	 Update<br>
+<br>
+32.	What is the difference in the DDS between RTV, RSQ, and UPD?<br>
+
+&bull;	RTV &ndash; is in the physical file key sequence, includes virtual fields, can be edited to drop some or all non&ndash;key fields, and can define select or omit logic<br>
+&bull;	RSQ &ndash; includes all the functionality of RTV and allows for an alternative key sequence that does not need to be unique<br>
+&bull;	UPD &ndash; is in the physical file key sequence and includes all fields from related files except virtual fields <br>
+<br>
+33.	What OS/400 objects does the QRY access path create?<br>
+<br>
+A physical file, a logical file and a CL Program.<br>
+<br>
+34.	Describe when a QRY access path can be used, and when it cannot?<br>
+<br>
+QRY access paths can only be used with the following function types:<br>
+Display File<br>
+Select Record<br>
+Retrieve Object<br>
+Print Object<br>
+Print File	<br>
+Cannot be used with a Create, Change or Delete Object.<br>
+ <br>
+35.	When would an OS/400 Query be preferable to a SYNON QRY ACP?<br>
+<br>
+When you want to create, change or delete records based on a QRY.<br>
+ <br>
+36.	How is a SPAN access path implemented in DDS?<br>
+<br>
+The generated names of the fields will be prefixed with the applicable file name to uniquely distinguish the common fields.<br>
+ <br>
+37.	What would a span access path be used for?<br>
+<br>
+A SPN access path specifies a keyed, multi&ndash;format access path.  It is used to describe to Edit and Display Transaction functions, how records are to be retrieved from a pair of related files that possess a common foreign key.  The files must be related by an &lsquo;Owned By&rsquo; or &lsquo;Refers To&rsquo; relation, with the SPN access path created over the &lsquo;owning&rsquo; or &lsquo;referred to&rsquo; file.  <br>
+Note: The SPN access path must be created explicitly initially defaults to the keys defined by the key relations of the based on files but can be overridden to an alternative key sequence is associated with RTV access path that points to an associated UPD access path that is used to carry out any updates to the based on file allows virtual fields to be specified on the access path relations and defaults to the virtual fields of the based on files relations allows specific selection of multiple access path relations.<br>
+<br>
+38.	How do the files need to be related to correctly implement a SPAN?<br>
+<br>
+The files must be related by an &lsquo;Owned By&rsquo; or &lsquo;Refers To&rsquo; relation.<br>
+<br>
+39.	What are 2 ways to define a Select/Omit access path?<br>
+<br>
+Static &ndash; Only those records that satisfy the select logic are included in the access path. Records are filtered as they are added or changed, the system determines if it should be included in the access path.  As data is read, no filtering is required as it has already been performed by the access path maintenance.<br>
+Dynamic &ndash; All records that satisfy the select logic are included in the access path.  Records are filtered as they are read by the program.<br>
+<br>
+40.	Describe the difference between Static and Dynamic access paths.<br>
+<br>
+Static processing is where the records are selected at generation time.  It requires a separate index and should be used for master files and tables.  Static is the most commonly used select/omit processing option and is the fastest.<br>
+Dynamic processing is where the records are selected at run time.  It allows for the sharing of active indexes and is the only option that can be used to include virtual fields.<br>
+<br>
+41.	What is the primary purpose of a RSQ access path?<br>
+<br>
+To provide an alternate sort of the entity by physical fields.<br>
+<br>
+42.	What is a QRY type access path?<br>
+<br>
+It allows for the use of an Open Query file within SYNON.<br>
+<br>
+<br>
+<strong>Built&ndash;in Functions</strong><br>
+*Add	*Commit	*Compute	*Concat<br>
+*Cvtvar	*Date Details	*Date Increment	*Div<br>
+*Div with Remainder	*Duration	*Elapsed Time	*Exit Program<br>
+*Modulo (Mod 10/11)	*Move	*Move All	*Mult<br>
+*Quit	*Rollback	*RTVCND	*Set Cursor<br>
+*Sub	*Substring	*Time Details	*Time Increment<br>
+<br>
+<br>
+<strong>Message Functions</strong><br>
+&bull;Send Error Message (SNDERRMSG)<br>	
+&bull;Send Informational Message (SNDINFMSG)<br>
+&bull;Send Complete Message (SNDCMPMSG)<br>	
+&bull;Send Status Message (SNDSTSMSG)<br>
+&bull;Retrieve Message (RTVMSG)<br>	
+&bull;Execute Message (EXCMSG)<br>
+<br>
+43.	Describe the difference between an &lsquo;Edit Transaction&rsquo; function and an &lsquo;Edit File&rsquo; function.<br>
+<br>
+The Edit Transaction function allows the user to update 2 different file formats, which can be linked together, such as an Order Header and Order Detail file.  The 2 files must be joined using a SPAN access path.  The Edit File function allows the user to update multiple records with the same format simultaneously.<br>
+<br>
+44.	What is the difference between an internal and an external function?<br>
+<br>
+An internal function generates code within a given function as where an external function generates a CALL to another function.<br>
+<br>
+<br>
+45.	Describe the difference between an &lsquo;Edit Transaction&rsquo; function and an &lsquo;Edit File&rsquo; function.<br>
+<br>
+The Edit Transaction function allows the user to update 2 different file formats, which can be linked together, such as an Order Header and Order Detail file.  The 2 files must be joined using a SPAN access path.  The Edit File function allows the user to update multiple records with the same format simultaneously.<br>
+<br>
+46.	What is the difference between an internal and an external function?<br>
+<br>
+An internal function generates code within a given function as where an external function generates a CALL to another function.<br>
+<br>
+CALL to another function.<br>
+47.	Does a Prompt and Validate (PMTRCD) automatically read records from the database file that it is built over?<br>
+<br>
+No.<br>
+<br>
+48.	You only wish to get the first record in a file, How?<br>
+<br>
+Do not pass any key parameters (a blank key) to a RTVOBJ function and, at the User Point &lsquo;Process Data Record&rsquo;, do NOT code any user logic.<br>
+<br>
+49.	How would you design a batch function for updating records?<br>
+<br>
+Use an Execute External function type which has a Retrieve Object in it then, once a record is read, use a Change Object to update the record.  <br>
+(The Retrieve Object can be omitted if the Change Object is to handle reading and updating the same file.)<br>
+<br>
+50.	How would you design a batch function to print a report for a given range of dates?<br>
+<br>
+Call a CL program which will call a Prompt and Validate function to fill in the record selection parameters.  Then the CL program will process the SBMJOB command to submit the Print File program with the appropriate parameters.<br>
+<br>
+51.	What are the &lsquo;important&rsquo; function options for an EDTRCD function type?<br>
+<br>
+Exit after Add<br>
+Bypass Key Screen<br>
+<br>
+52.	List all the alternative ways for putting several variables into one field.<br>
+<br>
+RTV Message <br>
+Concatenate built in function<br>
+<br>
+53.	List the contexts available in a PRTFIL function?<br>
+<br>
+CUR	NXT	PAR<br>
+JOB	PGM	CON<br>
+CND	WRK	<br>
+<br>
+ <br>
+54.	What are the different kinds of Synon message functions available and how are they used?<br>
+<br>
+&bull;	SNDERRMSG &ndash; an error message sent to a calling function used to provide diagnostic messages arising from user validation<br>
+&bull;	SNDINFMSG &ndash; an informational message sent to the message queue of a calling program<br>
+&bull;	SNDCMPMSG &ndash; a message sent to the function that called a standard function to indicate that a process has completed successfully<br>
+&bull;	SNDSTSMSG &ndash; a message sent to a calling function to provide information about the progress of a long running process<br>
+&bull;	RTVMSG &ndash; a function that specifies that the messages text is to be retrieved from the message file into a function<br>
+&bull;	EXCMSG &ndash; a function that specifies that allows for a command string to be executed from with a Synon function via a request message that is to be executed by the calling function (usually a CL command like SBMJOB) <br>
+Note: You should use SBMJOB with EXCEXTFUN or EXTUSRPGM and PRTFIL functions for batch execution from within an action diagram so that you can pass numeric parameters.  Also, references to submitted functions are visible to the Synon/2E impact analysis facilities<br>
+<br>
+<strong>Questions on Conditions</strong><br>
+ <br>
+55.	What types of Conditions are there?<br>
+<br>
+CMP (Compare) &ndash; used for conditions that specify a scope of values that a field can receive.  The scope is defined as a fixed value and an operator.ie.  X *GE Y or A *LT B.  CMP conditions cannot be used with STS fields.<br>
+RNG (Range) &ndash; used for conditions that specify a range of values that a field can receive.  ie.  &lsquo;Order Quantity is 10 and 100&rsquo; or &lsquo;Transaction Value is GT 25 and LE 250&rsquo;.  RNG conditions cannot be used with STS fields.<br>
+VAL (Values) &ndash; used for conditions that specify a value that a field can receive and can only be used with STS fields.  You need to specify 2 related values for a value condition: an internal which will be held in the database and against which the condition will be checked, and an external value which the user enters on the external function application panel.  Synon generates the necessary code to interpret the values.  The internal and external values can have different lengths but you will need to use value mapping facility to translate between them.  To do this, you must specify Y on the Translate field on the Edit Field panel.<br>
+LST (Values List) &ndash; Similar to the VAL condition in that it can only be used with STS fields.  Provides a list of valid values that a field can receive and allows the user to prompt for the list by entering a ? in the field or pressing F4.<br>
+<br>
+56.	What is QUIT?<br>
+<br>
+Quit is a built&ndash;in function that exits from an action diagram sequence construct.  It has no parameters and returns control to the calling sequence construct.<br>
+<br>
+a.	When would you use it?<br>
+<br>
+When you want to quit processing if a certain condition exists ie. Do not perform update processing if errors occurs on the validate processing.<br>
+	<br>
+57.	What is EXITPGM?<br>
+<br>
+EXIT Program is a built&ndash;in function that specifies an exit from a program that returns processing control to the calling program.  A return code parameter is passed to the calling program stating the reason and circumstances under which the program is exiting.<br>
+<br>
+58.	What happens when processing comes to a *QUIT within an Execute Internal Function?<br>
+<br>
+Processing in the program will proceed to the exit point of the function that called the Execute Internal Function.<br>
+<br>
+<br>
+<strong>Questions on Parameters</strong><br>
+  <br>
+59.	Where may POS type parameter be used?<br>
+<br>
+60.	How can you pass more than 9 parameter fields into a function?<br>
+<br>
+Specify a file name with the access path of *NONE and context of FLD, create a STR file type specifically for the use of passing parameters, or use *ARRAYS (rel 4.0 and greater) to define a structure for the use of passing parameters.<br>
+<br>
+61.	Why would you want to define a parameter as *NEITHER?<br>
+<br>
+To allow mapping of the field to the screen.<br>
+<br>
+62.	What is the difference between FLD, RCD and KEY contexts when passing parameters?<br>
+<br>
+FLD &ndash; One parameter is passed for each field specified.<br>
+RCD &ndash; One parameter is passed for all fields specified in the structure.<br>
+KEY &ndash; One parameter is passed for all key fields specified in the structure.<br>
+<br>
+63.	If the business requirements necessitate that more than just the key fields need to be passed from a Select Record function, what would have to be done to meet this requirement?<br>
+<br>
+Use a Display File in place of the Select Record function.<br>
+<br>
+<br>
+64.	Is it preferable to pass parameters as *FIELDS or *FILES?  Why?<br>
+<br>
+It is usually preferable to use *FILES because you will be able to select multiple fields from the list of fields on the file selected.  If you use *FIELDS, you will only have 9 parameters available.<br>
+<br>
+<br>
+65.	What does ELM mean and where is it used?<br>
+<br>
+ELM is the element context of an array that contains the fields defined for the last&ndash;accessed element of a specified array.  It is only valid in the *CVTVAR built&ndash;in function and may be specified for either the input or output parameter.<br>
+<br>
+66.	Which fields in an Edit File will be positioner fields and which will be selector fields?<br>
+<br>
+Key fields in an Edit File will be positioners.  Non&ndash;key fields will be selector fields.<br>
+<br>
+<br>
+67.	How do you create a new *Standard Header/Footer to be used for a report?<br>
+<br>
+Display all functions over the *Standard Header/Footer entity.  Select one to copy and copy it to a new name which accurately describes the purpose you are using if for.  Next, review the screen design and make the changes to the function required for your task through normal screen design techniques.<br>
+<br>
+68.	How do you change the *Standard Header/Footer on a screen report?<br>
+<br>
+From Function Options, press F5 to Select a new *Standard Header/Footer.   You cannot create a new standard header/footer when you are in the process of selecting one.<br>
+<br>
+<br>
+<strong>Journaling / Commitment Control Processing:</strong><br>
+<br>
+69.	What is Journaling and Commitment Control Processing?<br>
+	<br>
+	Journaling and Commitment Control processing is a means of automatically grouping a number of database updates into a single transaction for the purpose of recovery: either all or none of the updates will take place.  <br>
+<br>
+70.	What are the commands to perform journaling within a SYNON function?<br>
+<br>
+*COMMIT and *ROLLBACK<br>
+<br>
+71.	Where would a programmer control whether or not a program is run under commitment control?<br>
+<br>
+In the Edit Function Options section.<br>
+<br>
+72.	What are the values for controlling whether or not a program is run under commitment control?<br>
+<br>
+M (Master ) &ndash; Program is run under commitment control, program is controlling program and contains commit points.<br>
+S (Slave) &ndash; Program is run under commitment control; however, the commit points are in another program.<br>
+N (None) &ndash; Commitment control does not exist in this program.<br>
+<br>
+<br>
+73.	What is a &lsquo;CPF4131&rsquo;?<br>
+<br>
+It is an IBM code for a &lsquo;level check&rsquo condition.<br>
+
+<p>
+
+</p>
+</div>
+
+<!--advertisement start here -->
+<div class="w3-col l2 m12" id="right">
+<div class="sidesection">
+
+
+
+<div id="skyscraper">
+<div id="div-gpt-ad-1422003450156-5">
+ <!--Full size add here --><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- SDAutomaticSize -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3339759631351262"
+     data-ad-slot="1183552039"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</div>
+</div>
+
+
+</div>
+</div>
+<!--Side Sectionends here -->
+
+
+
+
+<!--closes the top-Div -->
+</div>
+
+<!--Put footer advertisement here -->
+
+
+<script src="js/footer.js"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
+<![endif]-->
+</body>
+</html>

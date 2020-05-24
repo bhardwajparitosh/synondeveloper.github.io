@@ -1,0 +1,233 @@
+Edit File
+
+.*K: <SCRN>                                                            
+   Positioning key field,                       Standard header.       
+   with column heading.                               ¦                
+.____¦________________________________________________¦_______________.
+|    ¦                                               \¦/              |
+|  OO¦OOOOOO                   Op: OOOOOOOO OOOOOOO 66/66/66 66:66:66 |
+|  OO¦OOOOOOOOOOOOOOOOOOOOOOOOOOOO OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO |
+|    ¦                             OOOOOOOOOOOOOOOO  OOOOOOOOOO       |
+|   \¦/                                                               |
+|   Field                                                             |
+|   name                                                              |
+|   ____                                                              |
+|                                                                     |
+|   Field Field name           Field          Field name       Field  |
+| ? name                       name                            name   |
+| _ ____  ____________________ ______________ ________________ _____  |
+| _ ____  ____________________ ______________ ________________ _____  |
+| _ ____  ____________________ ______________ ________________ _____  |
+| _ ____  ____________________ ______________ ________________ _____  |
+| _ ____  ____________________ ______________ ________________ _____  |
+| _ ____  ____________________ ______________ ________________ _____  |
+| _ ____  ____________________ ______________ ________________ _____  |
+|/¦\                               /¦\                                |
+|  CMD: 1-Exit, 9-Change mode.      ¦                                 |
+| ¦                                 ¦                                 |
+'~¦~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~¦~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+ Selection column.                Subfile record, with                 
+
+
+._____________________________________________________________________. 
+|                          | Fn   | Con-  | Drop | Hide | Drop | Hide | 
+| Screen formats           |fields| stants|  fmt |  fmt |  flds| flds | 
+|~~~~~~~~~~~~~~~~~~~~~~~~~~|~~~~~~|~~~~~~~|~~~~~~|~~~~~~|~~~~~~|~~~~~~| 
+| Std screen header (HDR)  |  -   |   -   |  -   |  -   |  -   |  -   | 
+| Subfile control (CTL)    |  Y   |   Y   |  -   |  -   | Y (1)|  Y   | 
+| Subfile record (RCD)     |  Y   |   Y   |  -   |  -   |  -   |  Y   | 
+| Std screen footer (FTR)  |  -   |   -   |  -   |  -   |  -   |  -   | 
+'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~' 
+
+ Action diagram user exit points                          
+                                                          
+ - Initialisation                                         
+     - USER: Initialise program                           
+                                                          
+ - Load subfile                                           
+     - USER: Initialise subfile header                    
+     - USER: Initialise subfile record (existing record)  
+     - USER: Initialise subfile record (new record)       
+                                                          
+ - Validate subfile header                                
+     - CALC: Subfile control function fields              
+     - USER: Validate subfile header                      
+                                                          
+ - Validate subfile                                       
+     - USER: Validate subfile record fields               
+     - CALC: Subfile record function fields               
+     - USER: Validate subfile record relations            
+ - Update DBF from subfile                     
+     - USER: Create DBF record                 
+     - USER: Change DBF record                 
+     - USER: Delete DBF record                 
+     - USER: Extra processing after DBF update 
+                                               
+ - Command keys                                
+     - USER: Process command keys              
+                                               
+ - Closedown                                   
+     - USER: Exit program processing           
+
+
+
+
+Prompt record
+***********************************************
+._____________________________________________________________________. 
+|                          | Fn   | Con-  | Drop | Hide | Drop | Hide | 
+| Screen formats           |fields| stants|  fmt |  fmt |  flds|  flds| 
+|~~~~~~~~~~~~~~~~~~~~~~~~~~|~~~~~~|~~~~~~~|~~~~~~|~~~~~~|~~~~~~|~~~~~~| 
+| Std screen header (HDR)  |  -   |   -   |  -   |  -   |  -   |  -   | 
+| Detail format (DTL)      |  Y   |   Y   |  -   |  -   |  -   |  Y   | 
+  Ø Ø                    Ÿ                                              
+| Std screen footer (FTR)  |  -   |   -   |  -   |  -   |  -   |  -   | 
+'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~' 
+
+.____¦_________________________________¦______________________________. 
+|    ¦                                 ¦                              | 
+|  OO¦OOOOOO OOOOOOO                  \¦/           66/66/66 66:66:66 | 
+|    ¦               OOOOOOOOOOOOOOOOOOOOOOOOOOOOOO                   | 
+|    ¦                                                                | 
+|   \¦/                                                               | 
+|   Field name one. .: ________ Virtual field OOOOOOOOOOOOOOOOOOOO    | 
+|   Field name two. .: ______                                         | 
+|   Field name three.: _________________                              | 
+|   Field name four .: _________________                              | 
+|   Field name five .: _______ Virtual field OOOOOOOOOOOOO            | 
+|                                  /¦\                                | 
+|                                   ¦                                 | 
+|                                   ¦                                 | 
+|                                   ¦                                 | 
+|  F3=Exit                          ¦                                 | 
+|                                   ¦                                 |
+'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~¦~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+                                   Any virtual fields are               
+                                   displayed next to the associated     
+                                   key field on access path.            
+
+
+Edit transaction
+***************************************
+._____________________________________________________________________.
+|                          | Fn   | Con-  | Drop | Hide | Drop | Hide |
+| Screen formats           |fields| stants|  fmt |  fmt |  flds| flds |
+|~~~~~~~~~~~~~~~~~~~~~~~~~~|~~~~~~|~~~~~~~|~~~~~~|~~~~~~|~~~~~~|~~~~~~|
+| Std screen header (HDR)  |  -   |   -   |  -   |  -   |  -   |  -   |
+| Subfile control (CTL)    |  Y   |   Y   |  -   |  -   |  -   |  Y   |
+  Ø Ø                    Ÿ                                             
+| Subfile record (RCD)     |  Y   |   Y   |  -   |  -   |  -   |  Y   |
+  Ø Ø                    Ÿ                                             
+| Std screen footer (FTR)  |  -   |   -   |  -   |  -   |  -   |  -   |
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+
+   Fields from first format, with             CUA Entry standard header
+   labels before fields (initially                    ¦                
+   arranged in one line).                             ¦                
+.____¦________________________________________________¦_______________.
+|    ¦                                               \¦/              |
+|  OO¦OOOOOO OOOOOOO                                66/66/66 66:66:66 |
+|    ¦               OOOOOOOOOOOOOOOOOOOOOOOOOOOOOO                   |
+|   \¦/                                                               |
+|   Field name __________  Field name OOOOOOOOOOOOOOOOOOOO            |
+|   Field name ________                                               |
+|   Field name ___                                                    |
+|                                                                     |
+|   Type options, press Enter.                                        |
+|   D=Delete request                                                  |
+|                                                                     |
+|   Field Field name           Field          Field name       Field  |
+| ? name                       name                            name   |
+| _ ____  ____________________ ______________ ________________ _____  |
+| _ ____  ____________________ ______________ ________________ _____  |
+| _ ____  ____________________ ______________ ________________ _____  |
+| _ ____  ____________________ ______________ ________________ _____  |
+|/¦\                               /¦\                                |
+| ¦3=Exit  F9=Go to 'Change' mode  F¦1=Delete                         |
+| ¦                                 ¦                                 |
+'~¦~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~¦~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+ Selection column.                Fields from second format,           
+                                  arranged as subfile, with            
+                                  column headings.                     
+
+Action diagram user exit points                        
+                                                       
+- Initialisation                                       
+    - USER: Initialise program                         
+                                                       
+- Initialise screen                                    
+    - USER: Initialise screen for new transaction      
+    - USER: Initialise screen for old transaction      
+                                                       
+- Validate key screen                                  
+    - USER: Validate header key fields                 
+    - USER: Validate header key relations              
+                                                       
+- Load subfile                                         
+    - USER: Load existing header                       
+    - USER: Initialise subfile record (old record)     
+    - USER: Initialise new subfile record (new record) 
+                                                       
+- Validate display screen                              
+    - USER: Validate header non-key fields       
+    - USER: Validate header non-key relations    
+    - USER: Validate subfile record fields       
+    - USER: Validate subfile record relations    
+    - CALC: Subfile record function fields       
+    - CALC: Header function fields               
+    - USER: Validate totals                      
+                                                 
+- Update processing                              
+    - USER: Create header DBF record             
+    - USER: Delete header DBF record             
+    - USER: Change header DBF record             
+    - USER: Delete detail DBF record             
+    - USER: Change detail DBF record             
+    - USER: Create detail DBF record             
+    - USER: Process detail record                
+                                                 
+- Command keys                                   
+    - USER: Process command keys                 
+- Closedown                           
+    - USER: Exit program processing   
+
+
+
+Select record.
+*********************************
+
+_____________________________________________________________________. 
+|                          | Fn   | Con-  | Drop | Hide | Drop | Hide | 
+| Screen formats           |fields| stants|  fmt |  fmt |  flds| flds | 
+|~~~~~~~~~~~~~~~~~~~~~~~~~~|~~~~~~|~~~~~~~|~~~~~~|~~~~~~|~~~~~~|~~~~~~| 
+| Std screen header (HDR)  |  -   |   -   |  -   |  -   |  -   |  -   | 
+| Subfile control (CTL)    |  -   |   Y   |  -   |  -   |  Y   |  Y   | 
+| Subfile record (RCD)     |  Y   |   Y   |  -   |  -   |  -   |  Y   | 
+| Std screen footer (FTR)  |  -   |   -   |  -   |  -   |  -   |  -   | 
+'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~' 
+
+                                    Panel Title                          
+.______________________________________¦______________________________.  
+|                                      ¦                              |  
+|                    OOOOOOOOOOOOOOOOOOOOOOOOOOOOOO                   |  
+|                                                                     |  
+|   Field name     Field Name                                         |  
+|   1=Select                                                          |  
+|                                                                     |  
+|   Field Field name           Field          Field name       Field  |  
+| ? name                       name                            name   |  
+| _ OOOO  OOOOOOOOOOOOOOOOOOOO OOOOOOOOOOOOOO OOOOOOOOOOOOOOOO OOOOO  |  
+| _ OOOO  OOOOOOOOOOOOOOOOOOOO OOOOOOOOOOOOOO OOOOOOOOOOOOOOOO OOOOO  |  
+| _ OOOO  OOOOOOOOOOOOOOOOOOOO OOOOOOOOOOOOOO OOOOOOOOOOOOOOOO OOOOO  |  
+| _ OOOO  OOOOOOOOOOOOOOOOOOOO OOOOOOOOOOOOOO OOOOOOOOOOOOOOOO OOOOO  |  
+| _ OOOO  OOOOOOOOOOOOOOOOOOOO OOOOOOOOOOOOOO OOOOOOOOOOOOOOOO OOOOO  |   
+|                                                               More..|   
+|/¦\                               /¦\                                |   
+| ¦3=Exit   F4=Prompt               ¦                                 |   
+'~¦~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~¦~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'   
+ Selection column.                Subfile record, with                    
+                                  column headings.                       
+
+
+
+ 
